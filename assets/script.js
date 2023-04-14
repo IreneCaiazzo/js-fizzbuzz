@@ -13,31 +13,25 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
 const eleGrid = document.querySelector('.grid');
-const fizzbuzz = document.querySelector('.fizzbuzz');
-const fizz = document.querySelector('.fizz');
-const buzz = document.querySelector('buzz');
-
 
 for (let i = 1; i <= 100; i++){
    
     if(i % 3 === 0 && i % 5 === 0){
         eleGrid.innerHTML = eleGrid.innerHTML + 
-        `<div class="cell">FizzBuzz</div>`;
+        `<div class="cell fizzbuzz">FizzBuzz</div>`;
         console.log('FizzBuz');
     }
 
     else if (i % 3 === 0){
         eleGrid.innerHTML = eleGrid.innerHTML + 
-        `<div class="cell">Fizz</div>`;
+        `<div class="cell fizz">Fizz</div>`;
         console.log('Fizz');
-        const fizz = document.querySelector('.fizz')
     }
 
     else if (i % 5 === 0){
         eleGrid.innerHTML = eleGrid.innerHTML + 
-        `<div class="cell">Buzz</div>`;
+        `<div class="cell buzz">Buzz</div>`;
         console.log('Buzz');
-        const buzz = document.querySelector('.buzz')
     }
 
     else{
