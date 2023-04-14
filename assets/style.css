@@ -22,7 +22,7 @@ h1{
 .grid{
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
+    justify-content: center;
 }
 
 .cell{
@@ -31,6 +31,19 @@ h1{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background-color: lightblue;
+    background-color: rgb(87, 192, 228);
+    color: white;
     margin: 5px;
+}
+
+.fizz{
+    background-color: rgb(237, 191, 106);
+}
+
+.buzz{
+    background-color: rgb(133, 239, 133);
+}
+
+.fizzbuzz{
+    background-color: rgb(188, 137, 235);
 }
