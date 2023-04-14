@@ -11,3 +11,10 @@
 // Crea un container nel DOM , aggiungendo (attraverso la modifica del .innerHtml o con la funzione .append()) un elemento html con il numero o la stringa corretta da mostrare.
 // BONUS 2:
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+
+const eleGrid = document.querySelector('.grid');
+
+for (let i = 0; i <= 100; i++){
+    console.log(i);
+    eleGrid.innerHTML = eleGrid.innerHTML + `<div class="cell">${i}</div>`
+}

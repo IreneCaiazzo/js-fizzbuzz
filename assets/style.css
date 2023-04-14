@@ -21,6 +21,8 @@ h1{
 
 .grid{
     display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .cell{
